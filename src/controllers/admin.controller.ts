@@ -16,6 +16,7 @@ adminController.getLogin = (req: Request, res: Response) => {
   try {
     console.log("getLogin");
     res.send("getLogin Page Admin");
+    // send / json / redirect / end / render
   } catch (err) {
     console.log("Erorr, getLogin:", err);
   }
@@ -27,6 +28,22 @@ adminController.getSignup = (req: Request, res: Response) => {
     res.send("getSignup Page Admin");
   } catch (err) {
     console.log("Erorr, getSignup:", err);
+  }
+};
+adminController.processLogin = (req: Request, res: Response) => {
+  try {
+    console.log("processLogin");
+    res.send("processLogin");
+  } catch (err) {
+    console.log("Erorr, processLogin:", err);
+  }
+};
+adminController.processSignup = (req: Request, res: Response) => {
+  try {
+    console.log("processSignup");
+    res.send("processSignup");
+  } catch (err) {
+    console.log("Erorr, processSignup:", err);
   }
 };
 
